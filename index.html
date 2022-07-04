@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400;1,500&display=swap" rel="stylesheet">    
+    <!--Google Fonts --> 
+    <!--Fonts Awesome --> 
+    <script src="https://kit.fontawesome.com/6bbb95791d.js" crossorigin="anonymous"></script>
+    <!--Fonts Awesome --> 
+    <!--mi estilos --> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--mi favicon --> 
+<link rel="shortcut icon" href="favicon_tecno.png" type="image/x-icon">
+    <title>DESAFIO JS / CONDICIONES</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="eje1">
+            <h2>EJERCICIO 1</h2>
+            <div class="eje1-items">
+                <img src="assets/img/ardilla.jpg" alt="ardilla" class="img1" id="idImg1" onclick="darCilck()">
+            </div>   
+        </div>
+        <div class="eje2">
+           <div class="eje2-items">
+                <h2>EJERCICIO 2</h2>
+                <h4>Puedes llevar hasta 10 stickers en total</h4>
+           </div>
+           <div class="eje2-cards" id="idEje2">
+                    <div class="card">
+                        <img src="https://picsum.photos/900/500" alt="" class="card-img">
+                        <input type="number" id="totalEje21" min="0" max="10" placeholder="Cantidad">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/600/900" alt="" class="card-img">
+                        <input type="number" id="totalEje22" min="0" max="10" placeholder="Cantidad">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/950/600" alt="" class="card-img">
+                        <input type="number" id="totalEje23" min="0" max="10" placeholder="Cantidad">
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn" onclick="SumarStickers()">Validar</button>
+                        <p id="idTotal"></p>
+                    </div>
+            </div>
+        </div>
+        <div class="eje3">
+            <div class="eje3-items">
+                <h2>EJERCICIO 3</h2>
+                <h4>Ingresar Password</h4>
+            </div>
+            <div class="eje3-selects">
+                <div class="eje3-select">
+                    <select name="numero-1" id="numero1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select name="numero-2" id="numero2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select name="numero-3" id="numero3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="eje3-footer">
+                <button class="ingresar" id="IdIngPass" onclick="Ingresar()">Ingresar</button>
+                <p id="idTexto2"> </p>
+            </div>   
+        </div>
+    </main>       
+     <script src="assets/js/miapp.js"></script>
+</body>
+</html>
